@@ -1,0 +1,45 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  background: #d32f2f;
+  color: white;
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.hero {
+  height: 100vh;
+  // background: url('/images/canada.jpg') no-repeat center/center;
+  color: white;
+  display: flex;
+  align-items: center;
+
+  h2 {
+    font-size: 4rem;
+  }
+}
