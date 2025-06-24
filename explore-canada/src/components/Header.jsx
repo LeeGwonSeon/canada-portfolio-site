@@ -7,7 +7,7 @@ function Header () {
   return (
   <header className="flex items-center justify-between px-4 py-3 bg-blue-800 text-white relative">
     {/* 왼쪽: 마크 */}
-    <div className="text-2xl">CA</div>
+    <div className="text-2xl">CA1</div>
 
     {/* 가운데: 로고 이미지 */}
     <div className="flex-1 text-center">
