@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import Region from './pages/Region';
+import Portfolio from './pages/Portfolio';
 import Header from './components/Header';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/region/:id" element={<Region />} />
+        <Route path="/portfolio/:id" element={<Portfolio />} />
       </Routes>
     </BrowserRouter>
   );
