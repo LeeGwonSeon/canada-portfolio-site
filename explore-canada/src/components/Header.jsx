@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from 'react-router-dom'; //react-router 사용 시
-
+import DesktopNav from "./common/Navbar/DesktopNav";
 
 function Header () {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,15 +34,8 @@ function Header () {
         </Link>
         
         {/* 데스크탑 네비게이션 */}
-        <nav className="hidden md:flex items-center space-x-8">
-          {navItems.map((item)=> (
-            <Link key={item.name} to={item.path} className={`flex items-center space-x-1 py-1 px-1 border-b-2 transition-colors
-          ${location.pathname === item.path? 'border-red-600 text-red-700':'border-transparent hover:border-gray-300 text-gray-700 hover:text-red-600'}`}>
-            <span className="text-lg">{item.icon}</span>
-            <span className="font-medium">{item.name}</span>
-          </Link>  
-          ))}
-        </nav>
+        <DesktopNav navItems={navItems} currentPath={location.pathname} socialLinks={socialLinks}>
+        </DesktopNav>
 
         {/* 데스크탑 SNS 아이콘 */}
         <div className="hidden md:flex items-center space-x-4">
