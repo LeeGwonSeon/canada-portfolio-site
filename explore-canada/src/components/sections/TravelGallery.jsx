@@ -1,34 +1,35 @@
-import { useState } from "react";
-import { FaFilter, FaMapMarkerAlt } from 'react-icons/fa'
-
-
-const travelData = [
+// 더미 데이터 (나중에 Supabase로 교체)
+const tempPhotos = [
     {
         id: 1,
-        location: "벤쿠버",
-        title: "스텐리 공원의 일몰",
-        image: "/images/travel/vancouver-sunset.jpg",
-        date: "2025-07-18",
-        tags: ["#자연", "#공원", "#일몰"],
-        coordinates: { lat: 49.300054, lng: -123.155348 },
-        description: "북미 최대 도시 공원에서 바라본 환상적인 석양 풍경"
+        imageUrl: "images/banff.jpg",
+        title: "Banff National Park",
+        location: "Alberta"
     },
-    {
+        {
         id: 2,
-        location: "토론토",
-        title: "CN 타워 전말",
-        image: "/images/travel/cn-tower.jpg",
-        date: "2025-07-20",
-        tags: ["#랜드마크", "#도시", "#야경"],
-        coordinates: { lat: 43.642566, lng: -79.387057 },
-        description: "캐나다의 상징적 랜드마크에서 찍은 파노라마 사진"
+        imageUrl: "images/niagara.jpg",
+        title: "Niagara Falls",
+        location: "Ontario"
     }
-]
+];
 
-export default function TravelGallery(){
-    const [activeFilter, setActiveFilter] = useState("all");
+export default function TravelGallery() {
+    return (
+        <section>
+            <h2 className=" text-2xl font-semibold mb-4">Photo Gallery</h2>
 
-    return(
-        <div></div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {tempPhotos.map((photo) => (
+                    <div key={photo.id} className="border rounded-lg overflow-hidden">
+                        <img src={photo.imageUrl} alt={photo.title} className="w-full h-48 object-cover" loading="lazy" />
+                        <div className="p-4">
+                            <h3 className="font-bold">{photo.title}</h3>
+                            <p className="text-sm text-gray-600">{photo.location}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </section>
     )
 }
