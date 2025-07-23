@@ -9,7 +9,7 @@ function Header () {
   // Canada 테마 메뉴 데이터
   const navItems = [
     { name: 'Home', path: '/', icon: '🏠'},
-    { name: 'Canadaian Life', path: '/life', icon: '🍁'},
+    { name: 'Canadaian Life', path: '/about', icon: '🍁'},
     { name: 'Portfolio', path: '/portfolio', icon: '📁'},
     { name: 'Travel Log', path: '/travel', icon: '✈️'},
     { name: 'Contact', path: '/contact', icon: '📧'}
