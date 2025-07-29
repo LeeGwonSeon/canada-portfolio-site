@@ -29,7 +29,7 @@ function Header () {
         <Link to="/" className="flext items-center space-x-2 group" onClick={() => setIsMenuOpen(false)}>
           <img src="/images" alt="Canada Maple Leaf" className="h-8 w-8 transition-transform group-hover:rotate-12"/>
           <span className="text-2xl font-bold bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent">
-            CanadaFolioProject
+            CanadaFolio
           </span>
         </Link>
         
