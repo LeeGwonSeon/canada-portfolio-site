@@ -5,6 +5,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Header from './components/Header';
 import HeroSection from './components/sections/Hero/HeroSection';
+import TravelLog from './pages/travel';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/travel' element={<TravelLog />}></Route>
       </Routes>
     </BrowserRouter>
   );
