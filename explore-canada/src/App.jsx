@@ -25,7 +25,7 @@ function App() {
       {/* Hero Section */}
       <section className='h-screen flex items-center justify-center relative overflow-hidden'>
         {/* 배경 이미지 */}
-        <div className='absolute inset-0 bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=1920')`}} />
+        <div className='absolute inset-0 bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=1920')`}} />
           <div className='relative z-10 text-center text-white px-6'>
             <motion.h1 className='text-4xl md:text-6xl font-bold mb-6' initial={{ opacity: 0, y: 50 }} animate={{ opacity:1, y: 0 }} transition={{ duration: 0.8 }}>
               캐나다의 아름다운 자연을 만나보세요
