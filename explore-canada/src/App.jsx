@@ -71,7 +71,7 @@ function App() {
             ].map((place, index) =>(
               <motion.div key={place.title} className='bg-white rounded-2xl shadow-lg overflow-hidden' initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y:0 }} transition={{ duration: 0.6, delay: index * 0.1 }} whileHover={{ scale: 1.05, y: -10 }} viewport={{ once: true }}>
                 <div className='overflow-hidden'>
-                  <motion.img src={place.image} alt={place.title} className='w-full h-48 object-cover' whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }} />
+                  <motion.img src={place.image} alt={place.title} className='w-full h-48 object-cover' transition={{ duration: 0.3 }} />
                 </div>
                 <div className='p-6'>
                   <h3 className='text-xl font-semibold text-gray-800 mb-2'>{place.title}</h3>
