@@ -27,7 +27,7 @@ Animation: Framer Motion
 설치 및 실행
 bash# 프로젝트 클론
 git clone https://github.com/LeeGwonSeon/canada-portfolio-site
-cd canada-travel
+cd explore-canada
 
 # 의존성 설치
 npm install
