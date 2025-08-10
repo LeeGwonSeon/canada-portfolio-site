@@ -8,7 +8,7 @@ function App() {
       <motion.header className='fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm' initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.6 }}>
         <nav className='max-w-6xl mx-auto px-6 py-4 flex justify-between items-center'>
           <motion.div className='text-2xl font-bold text-red-600' whileHover={{ scale: 1.05 }}>
-            Canada Travel
+           🇨🇦 Canada Travel
           </motion.div>
           <ul className='hidden md:flex space-x-8'>
             {['Home', '여행지', '갤러리', '문의'].map((item) =>(
@@ -49,24 +49,24 @@ function App() {
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
             {[
               {
-                image: "",
-                title: "",
-                description: ""
+                image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop",
+                title: "밴프 국립공원",
+                description: "캐나다 록키산맥의 절경을 만나볼 수 있는 곳"
               },
               {
-                image: "",
-                title: "",
-                description: ""
+                image: "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=400&h=300&fit=crop",
+                title: "토론토",
+                description: "캐나다 최대 도시의 다양한 문화와 랜드마크"
               },
               {
-                image: "",
-                title: "",
-                description: ""
+                image: "https://images.unsplash.com/photo-1489447068241-b3490214e879?w=400&h=300&fit=crop",
+                title: "나이아가라 폭포",
+                description: "세계적으로 유명한 거대한 폭포의 웅장함"
               },
               {
-                image: "",
-                title: "",
-                description: ""
+                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+                title: "밴쿠버",
+                description: "산과 바다가 어우러진 아름다운 서부 도시"
               }
             ].map((place, index) =>(
               <motion.div key={place.title} className='bg-white rounded-2xl shadow-lg overflow-hidden' initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y:0 }} transition={{ duration: 0.6, delay: index * 0.1 }} whileHover={{ scale: 1.05, y: -10 }} viewport={{ once: true }}>
@@ -92,10 +92,10 @@ function App() {
 
           <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
             {[
-              "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=1920",
-              "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=1920",
-              "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=1920",
-              "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=1920",
+              "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop",
+              "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=300&h=200&fit=crop",
+              "https://images.unsplash.com/photo-1489447068241-b3490214e879?w=300&h=200&fit=crop",
+              "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop"
             ].map((image, index)=>(
               <motion.div key={index} className='overflow-hidden rounded-xl' initial={{ opacity: 0, scale: 0.8 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: index * 0.1 }} whileHover={{ scale: 1.05 }} viewport={{ once: true }}>
                 <img src={image} alt={`갤러리 ${index + 1}`} className='w-full h-48 object-cover cursor-pointer' />
@@ -117,13 +117,13 @@ function App() {
               <h3 className='text-2xl font-semibold mb-6'>캐나다 여행이 궁금하시다면?</h3>
               <div className='space-y-4'>
                 <p className='flex items-center text-lg'>
-                  <span className='mr-3'></span>contrcti@canadatravel.com
+                  <span className='mr-3'>📧</span>contrcti@canadatravel.com
                 </p>
                 <p className='flex items-center text-lg'>
-                  <span className='mr-3'></span>010-0000-0000
+                  <span className='mr-3'>📞</span>010-0000-0000
                 </p>
                 <p className='flex items-center text-lg'>
-                  <span className='mr-3'></span>서울시 강남구
+                  <span className='mr-3'>📍</span>서울시 강남구
                 </p>
               </div>
             </motion.div>
