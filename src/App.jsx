@@ -133,7 +133,7 @@ function App() {
               <motion.input type='email' placeholder='이메일' className='w-full px-4 py-3 rounded-lg text-gray-800' whileFocus={{ scale: 1.02}} />
               <motion.textarea placeholder='문의내용' rows='4' className='w-full px-4 py-3 rounded-lg text-gray-800 resize-none' whileFocus={{ scale: 1.02}} />
               <motion.button type='submit' className='w-full bg-red-600 hover:bg-red-700 py-3 rounded-lg font-semibold transition-colors' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                문의하기
+                문의하기 
               </motion.button>
             </motion.form>
           </div>
