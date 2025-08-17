@@ -30,8 +30,8 @@
 ### 설치 및 실행
 ```bash
 # 프로젝트 클론
-git clone https://github.com/yourusername/canada-travel.git
-cd canada-travel
+git clone https://github.com/LeeGwonSeon/canada-portfolio-site
+cd canada-portfolio-site
 
 # 의존성 설치
 npm install
